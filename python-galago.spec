@@ -8,7 +8,6 @@ Group:		Libraries/Python
 Source0:	http://galago-project.org/files/releases/source/galago-python/galago-python-%{version}.tar.bz2
 # Source0-md5:	27be31fcf2886aa21823caec15dc34aa
 BuildRequires:	python-devel >= 1:2.5
-BuildRequires:	python-pygtk-devel
 BuildRequires:	rpm-pythonprov
 Requires:	libgalago
 %pyrequires_eq	python-libs
