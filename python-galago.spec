@@ -12,7 +12,6 @@ BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-pygtk-devel >= 2:2.4.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-pythonprov
-Requires:	libgalago
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
