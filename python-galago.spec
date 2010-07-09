@@ -2,7 +2,7 @@ Summary:	Python bindings for Galago
 Summary(pl.UTF-8):	Wiązania Pythona do Galago
 Name:		python-galago
 Version:	0.5.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://galago-project.org/files/releases/source/galago-python/galago-python-%{version}.tar.bz2
