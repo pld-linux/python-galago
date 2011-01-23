@@ -7,7 +7,10 @@ License:	GPL
 Group:		Libraries/Python
 Source0:	http://galago-project.org/files/releases/source/galago-python/galago-python-%{version}.tar.bz2
 # Source0-md5:	27be31fcf2886aa21823caec15dc34aa
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libgalago-devel >= 0.5.0
+BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-pygtk-devel >= 2:2.4.0
@@ -26,6 +29,10 @@ Wiązania Pythona do Galago.
 %setup -q -n galago-python-%{version}
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make} \
 	PYTHON="%{__python}"
